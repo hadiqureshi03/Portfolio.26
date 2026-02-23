@@ -202,6 +202,60 @@ h2::after {
   border-radius: 2px;
 }
 
+/* ===== FÆRDIGHEDER ===== */
+.faerdigheder-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.cirkel-kort {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  width: 120px;
+}
+
+.cirkel-kort svg {
+  width: 120px;
+  height: 120px;
+  transform: rotate(-90deg);
+}
+
+.cirkel-baggrund {
+  fill: none;
+  stroke: var(--border);
+  stroke-width: 8;
+}
+
+.cirkel-fremgang {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-dasharray: 251.33;
+  stroke-dashoffset: 251.33;
+  transition: stroke-dashoffset 1.2s ease;
+}
+
+.cirkel-procent {
+  position: absolute;
+  top: 42px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--tekst);
+}
+
+.cirkel-kort p {
+  font-size: 0.9rem;
+  color: var(--tekst-dæmpet);
+  margin: 0;
+}
+
 /* ===== PROJEKTER GRID ===== */
 .projekter-grid {
   display: grid;

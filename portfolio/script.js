@@ -37,6 +37,23 @@ window.addEventListener('scroll', () => {
   });
 });
 
+// Cirkel-animation ved scroll
+const cirkelObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.querySelectorAll('.cirkel-fremgang').forEach(cirkel => {
+        const procent = cirkel.getAttribute('data-procent');
+        const offset = 251.33 * (1 - procent / 100);
+        cirkel.style.strokeDashoffset = offset;
+      });
+      cirkelObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.3 });
+
+const faerdighedSektion = document.querySelector('.faerdigheder-grid');
+if (faerdighedSektion) cirkelObserver.observe(faerdighedSektion);
+
 // Fade-in animation ved scroll
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
