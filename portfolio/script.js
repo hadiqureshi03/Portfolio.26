@@ -1,3 +1,20 @@
+// Typewriter effekt på navn
+const navnEl = document.getElementById('navn-tekst');
+const cursor = document.querySelector('.cursor');
+const navn = 'Hadi Qureshi';
+let i = 0;
+
+setTimeout(() => {
+  const interval = setInterval(() => {
+    navnEl.textContent += navn[i];
+    i++;
+    if (i === navn.length) {
+      clearInterval(interval);
+      cursor.classList.add('cursor-stop');
+    }
+  }, 110);
+}, 400);
+
 // Highlight aktiv nav-link ved scroll
 const sektioner = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('nav a');

@@ -76,12 +76,46 @@ nav a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  gap: 4rem;
   padding: 6rem 2rem 4rem;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .hero-content {
-  max-width: 700px;
+  max-width: 560px;
+}
+
+.hero-billede {
+  flex-shrink: 0;
+}
+
+.billede-placeholder {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  border: 2px dashed var(--border);
+  background: var(--kort-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--tekst-dæmpet);
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .billede-placeholder {
+    width: 180px;
+    height: 180px;
+  }
 }
 
 .label {
@@ -101,6 +135,21 @@ h1 {
 
 h1 span {
   color: var(--accent);
+}
+
+.cursor {
+  color: var(--accent);
+  animation: blink 0.7s step-end infinite;
+}
+
+.cursor.cursor-stop {
+  animation: none;
+  opacity: 0;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 .beskrivelse {
@@ -183,6 +232,36 @@ h2::after {
 .kort p {
   color: var(--tekst-dæmpet);
   font-size: 0.95rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 1rem;
+}
+
+.tag {
+  font-size: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  background: rgba(88, 166, 255, 0.1);
+  color: var(--accent);
+  border: 1px solid rgba(88, 166, 255, 0.3);
+}
+
+.kort-link {
+  display: inline-block;
+  margin-top: 1.25rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.kort-link:hover {
+  opacity: 0.75;
 }
 
 /* ===== FADE-IN ANIMATION ===== */
