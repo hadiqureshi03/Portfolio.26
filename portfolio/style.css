@@ -90,19 +90,13 @@ nav a:hover {
   flex-shrink: 0;
 }
 
-.billede-placeholder {
+.portræt-img {
   width: 280px;
   height: 280px;
   border-radius: 50%;
-  border: 2px dashed var(--border);
-  background: var(--kort-bg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--tekst-dæmpet);
-  font-size: 0.85rem;
-  text-align: center;
-  padding: 1rem;
+  object-fit: cover;
+  object-position: 22% top;
+  border: 3px solid var(--border);
 }
 
 @media (max-width: 768px) {
