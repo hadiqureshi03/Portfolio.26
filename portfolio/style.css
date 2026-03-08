@@ -271,6 +271,17 @@ h2::after {
   transform: translateY(-4px);
 }
 
+.kort-preview {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  border: 1px solid var(--border);
+  background: var(--bg);
+}
+
 .kort h3 {
   font-size: 1.2rem;
   margin-bottom: 0.75rem;
