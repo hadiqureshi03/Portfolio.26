@@ -17,6 +17,7 @@
         <li><a href="#kontakt">Kontakt</a></li>
       </ul>
     </nav>
+    <div class="neon-divider"></div>
   </header>
 
   <main>
@@ -27,7 +28,10 @@
         <p class="label">Multimediedesigner – Praktikansøgning</p>
         <h1>Hej, jeg hedder<br><span id="navn-tekst"></span><span class="cursor">|</span></h1>
         <p class="beskrivelse">Jeg er multimediedesignerstuderende med passion for design, webudvikling og kreative løsninger.</p>
-        <a href="#projekter" class="btn">Se mine projekter</a>
+        <div class="hero-knapper">
+          <a href="#projekter" class="btn">Se mine projekter</a>
+          <a href="#" class="btn-outline">Download CV</a>
+        </div>
       </div>
       <div class="hero-billede">
         <img src="portræt-portfolio.JPG" alt="Hadi Qureshi" class="portræt-img" />
@@ -37,7 +41,29 @@
     <!-- Om mig -->
     <section id="om-mig" class="sektion">
       <h2>Om mig</h2>
-      <p>Skriv lidt om dig selv her – dine interesser, din uddannelse og hvad du brænder for inden for multimediedesign.</p>
+      <div class="om-mig-layout">
+
+        <div class="om-mig-billede">
+          <div class="om-mig-placeholder"></div>
+        </div>
+
+        <div class="om-mig-indhold">
+          <h3 class="om-mig-titel">Multimediedesigner &amp; Webudvikler</h3>
+          <p class="om-mig-tekst">Skriv lidt om dig selv her – dine interesser, din uddannelse og hvad du brænder for inden for multimediedesign.</p>
+
+          <div class="om-mig-info">
+            <div class="info-punkt"><span>Navn:</span> Hadi Qureshi</div>
+            <div class="info-punkt"><span>Fødselsdato:</span> DD. MM. ÅÅÅÅ</div>
+            <div class="info-punkt"><span>Uddannelse:</span> Multimediedesign</div>
+            <div class="info-punkt"><span>Skole:</span> KEA</div>
+            <div class="info-punkt"><span>By:</span> København</div>
+            <div class="info-punkt"><span>Status:</span> Søger praktikplads</div>
+            <div class="info-punkt"><span>Email:</span> din@email.dk</div>
+            <div class="info-punkt"><span>Telefon:</span> +45 XX XX XX XX</div>
+          </div>
+        </div>
+
+      </div>
     </section>
 
     <!-- Færdigheder -->
@@ -57,9 +83,9 @@
         <div class="cirkel-kort">
           <svg viewBox="0 0 100 100">
             <circle class="cirkel-baggrund" cx="50" cy="50" r="40"/>
-            <circle class="cirkel-fremgang" cx="50" cy="50" r="40" data-procent="85"/>
+            <circle class="cirkel-fremgang" cx="50" cy="50" r="40" data-procent="80"/>
           </svg>
-          <span class="cirkel-procent">85%</span>
+          <span class="cirkel-procent">80%</span>
           <p>CSS</p>
         </div>
 
@@ -75,27 +101,27 @@
         <div class="cirkel-kort">
           <svg viewBox="0 0 100 100">
             <circle class="cirkel-baggrund" cx="50" cy="50" r="40"/>
-            <circle class="cirkel-fremgang" cx="50" cy="50" r="40" data-procent="65"/>
+            <circle class="cirkel-fremgang" cx="50" cy="50" r="40" data-procent="50"/>
           </svg>
-          <span class="cirkel-procent">65%</span>
+          <span class="cirkel-procent">50%</span>
           <p>Tailwind</p>
         </div>
 
         <div class="cirkel-kort">
           <svg viewBox="0 0 100 100">
             <circle class="cirkel-baggrund" cx="50" cy="50" r="40"/>
-            <circle class="cirkel-fremgang" cx="50" cy="50" r="40" data-procent="75"/>
+            <circle class="cirkel-fremgang" cx="50" cy="50" r="40" data-procent="80"/>
           </svg>
-          <span class="cirkel-procent">75%</span>
+          <span class="cirkel-procent">80%</span>
           <p>Astro</p>
         </div>
 
         <div class="cirkel-kort">
           <svg viewBox="0 0 100 100">
             <circle class="cirkel-baggrund" cx="50" cy="50" r="40"/>
-            <circle class="cirkel-fremgang" cx="50" cy="50" r="40" data-procent="60"/>
+            <circle class="cirkel-fremgang" cx="50" cy="50" r="40" data-procent="40"/>
           </svg>
-          <span class="cirkel-procent">60%</span>
+          <span class="cirkel-procent">40%</span>
           <p>TypeScript</p>
         </div>
 

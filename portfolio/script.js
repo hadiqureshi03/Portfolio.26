@@ -10,7 +10,6 @@ setTimeout(() => {
     i++;
     if (i === navn.length) {
       clearInterval(interval);
-      cursor.classList.add('cursor-stop');
     }
   }, 110);
 }, 400);
