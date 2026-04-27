@@ -371,11 +371,26 @@ h2::after {
 }
 
 /* ===== PROJEKTER GRID ===== */
+.semester-gruppe {
+  margin-bottom: 3rem;
+}
+
+.semester-titel {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(88, 166, 255, 0.2);
+}
+
 .projekter-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
-  margin-top: 2rem;
+  margin-top: 0;
 }
 
 .kort {
@@ -429,9 +444,14 @@ h2::after {
   border: 1px solid rgba(88, 166, 255, 0.3);
 }
 
-.kort-link {
-  display: inline-block;
+.kort-links {
+  display: flex;
+  gap: 1rem;
   margin-top: 1.25rem;
+  align-items: center;
+}
+
+.kort-link {
   color: var(--accent);
   text-decoration: none;
   font-size: 0.9rem;
@@ -441,6 +461,17 @@ h2::after {
 
 .kort-link:hover {
   opacity: 0.75;
+}
+
+.kort-kode {
+  color: var(--text-muted, #8b949e);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.kort-kode:hover {
+  color: var(--accent);
 }
 
 /* ===== FADE-IN ANIMATION ===== */
