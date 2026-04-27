@@ -1,2 +1,5 @@
 # Local Netlify folder
 .netlify
+
+# Separate projects (not part of this repo)
+family friends/
